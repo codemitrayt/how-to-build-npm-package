@@ -1,0 +1,17 @@
+{
+  "name": "@codemitrayt/test-package",
+  "version": "1.0.0",
+  "description": "this is just for learning how to build a npm package",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsup src/index.ts --format cjs,esm --dts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^20.14.12",
+    "tsup": "^8.2.3",
+    "typescript": "^5.5.4"
+  }
+}
