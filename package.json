@@ -1,6 +1,6 @@
 {
   "name": "@codemitrayt/test-package",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "this is just for learning how to build a npm package",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
