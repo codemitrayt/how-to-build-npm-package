@@ -1,19 +1,23 @@
 {
   "name": "@codemitrayt/test-package",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "this is just for learning how to build a npm package",
-  "main": "index.js",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.js",
   "scripts": {
     "build": "tsup src/index.ts --format cjs,esm --dts",
     "lint": "tsc",
     "test:watch": "vitest",
     "test": "vitest run",
-    "ci": "pnpm run lint && pnpm run test && pnpm run build"
+    "ci": "pnpm run lint && pnpm run test && pnpm run build",
+    "release": "pnpm run lint && pnpm run test && pnpm run build && changeset publish"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@changesets/cli": "^2.27.7",
     "@types/node": "^20.14.12",
     "tsup": "^8.2.3",
     "typescript": "^5.5.4",
